@@ -2,13 +2,34 @@
 <html>
 <head>
   <title>PetAdoption</title>
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+   
+<div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <nav>
+              </nav>
+            </div>
+          </div>
+          <div class="inner cover">
+            <%= yield %>
+          </div>
+          <div class="mastfoot">
+            <div class="inner">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 </body>
 </html>

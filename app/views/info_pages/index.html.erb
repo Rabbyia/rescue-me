@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Info Pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Information</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @info_pages.each do |info_page| %>
+      <tr>
+        <td><%= info_page.information %></td>
+        <td><%= link_to 'Show', info_page %></td>
+        <td><%= link_to 'Edit', edit_info_page_path(info_page) %></td>
+        <td><%= link_to 'Destroy', info_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Info page', new_info_page_path %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :info_pages
   resources :dogs
   get 'welcome/index'
 
