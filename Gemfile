@@ -23,6 +23,8 @@ gem 'bootstrap-sass', '~> 3.3.3'
 
 gem 'momentjs-rails', '>= 2.9.0'
 
+gem "paperclip", "~> 4.2"
+
 
 group :development, :test do
 
@@ -34,4 +36,3 @@ group :development, :test do
 
   gem 'spring'
 end
-
