@@ -1,22 +1,14 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @dog.name %></h1>
+<h2><%= @dog.age %></h2>
 
-<p>
-  <strong>Name:</strong>
-  <%= @dog.name %>
-</p>
+<%= image_tag @dog.avatar.url(:medium) %>
+<p> <%= @dog.description %></p>
 
-<p>
-  <strong>Age:</strong>
-  <%= @dog.age %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @dog.description %>
-</p>
-
-<%= link_to 'Edit', edit_dog_path(@dog) %> |
-<%= link_to 'Back', dogs_path %>
+<div class="btn-group">
+  <%= link_to 'Edit', edit_dog_path(@dog), class: "btn btn-default" %> 
+  <%= link_to 'Back', dogs_path, class: "btn btn-default" %>
+</div>
 
 <div class="one_third">
 <h2 style="text-align: center;"><a href="about.html.erb"><img class=" wp-image-540" title="Adoptable Dogs" src="http://therescueddog.org/wp-content/uploads/2014/02/audrey.png" alt="dog" width="183" height="184"></a></h2>
