@@ -11,6 +11,31 @@
     </div>
   <% end %>
 
+<div class="panel panel-default panel-left">
+  <div class="panel-heading">
+    <h3 class="panel-body">
+
+
+      <a href="#" class="button expand">Expanded Button</a>
+
+      <%= link_to 'All Dogs',dogs_all, class: "btn btn-primary button-expand button-round"%>
+      <%= link_to 'Puppies Dogs',dogs_puppies, class: "btn btn-info"%>
+      <%= link_to 'Young Dogs',dogs_young, class: "btn btn-success"%>
+      <%= link_to 'Senior Dogs',dogs_senior, class: "btn btn-warning"%>
+      <%= link_to 'Special Needs Dogs',dogs_special_needs, class: "btn btn-danger"%>
+
+  </div>
+</div>
+
+<div class="panel panel-primary panel-right">
+  <div class="panel-heading">
+    <h3 class="panel-title"> Information You Need to Know</h3>
+    <h3 class="panel-body">
+       PANEL information
+  </div>
+</div>
+
+
   <div class="field">
     <%= f.label :information %><br>
     <%= f.text_field :information %>
