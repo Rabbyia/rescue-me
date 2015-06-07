@@ -1,14 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Info Pages</h1>
+<div class="center">
+<h1>Adoption Information Page</h1>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Information</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div class="panel panel-success panel-left">
+    <div class="container", "left">
+      <div class="panel-heading">
+        <h3 class="panel-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="panel panel-primary panel-right">
+    <div class="container", "right">
+    <div class="panel-heading">
+      <h3 class="panel-title"> Information You Need to Know</h3>
+      <h3 class="panel-body">
+         PANEL information
+    </div>
+    </div>
+  </div>
+</div>
 
   <tbody>
     <% @info_pages.each do |info_page| %>
@@ -24,4 +38,6 @@
 
 <br>
 
-<%= link_to 'New Info page', new_info_page_path %>
+<%= link_to 'Main Page', root_path, class:"btn btn-info" %>
+
+<%= link_to 'Adoption Page', dogs_path, class:"btn btn-info" %>

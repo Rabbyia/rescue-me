@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Dogs</h1>
+<h1>Dogs that need Forever Homes</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= dog.name %></td>
         <td><%= dog.age %></td>
         <td><%= dog.description %></td>
-        <td><%= link_to 'Show', dog %></td>
-        <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
-        <td><%= link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', dog, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_dog_path(dog),  class:"btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' },  class:"btn btn-danger"%></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,8 @@
 
 <br>
 
-<%= link_to 'New Dog', new_dog_path %>
+<%= link_to 'New Dog', new_dog_path, class: "btn btn-info" %>
+
+<%= link_to 'Information Page', info_pages_path, class: "btn btn-success "%>
+
+<%= link_to 'Main Page', root_path, class:"btn btn-primary" %>
