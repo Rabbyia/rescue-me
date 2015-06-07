@@ -1,46 +1,56 @@
 <p id="notice"><%= notice %></p>
 
+<div class="navbar navbar-default">
+  <div class="container">
+    <a class="navbar-brand" href="#">RESCUE ME</a>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href= 'main_page' >Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li></li>
+      <li class="divider-vertical"></li>
+      <li><a href="dogs#index">Adopt</a></li>
+      <!-- <li><a href="info_pages#index">Information</a></li> -->
+      <li><a href="#">Sponsor</a></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
 
-<h1>Adoption Information Page</h1>
+<head>
+
+<div class="jumbotron">
+<h2>Adoption Information Page</h2>
+</div>
+
+</head>
+
+<body>
 
 
-    <div class="container">
-      <div class="left">
-        <div class="panel panel-success panel-left">
-        <div class="panel-heading">
-          <h3>Search Options</h3>
-          <h3 class="panel-body">
-            <button id="alldogs-close-CSS"></button>
-            <button id="puppies-close-CSS"></button>
-            <button id="youngdog-close-CSS"></button>
-            <button id="seniordog-close-CSS"></button>
-            <button id="specialdogs-close-CSS"></button>
-
-
-        </div>
+<div class="col-md-6">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3>Search Options</h3>
+      <div class="panel-body">
+        <button id="alldogs-close-CSS"></button>
+        <button id="puppies-close-CSS"></button>
+        <button id="youngdog-close-CSS"></button>
+        <button id="seniordog-close-CSS"></button>
+        <button id="specialdogs-close-CSS"></button>
       </div>
     </div>
-
-      <div class="right">
-        <div class="panel panel-primary panel-right">
-        <div class="panel-heading">
-          <h3 class="panel-title"> Information You Need to Know</h3>
-          <h3 class="panel-body">
-
-
-            <ul>
-              <li>
-
-
-            </ul>
-
-          </div>
-        </div>
-    </div>
   </div>
+</div>
 
-<br>
+<!-- <div class="right"> -->
+<!-- <div class="right","panel panel-primary panel-right"> -->
+<!-- <div class="panel-heading"> -->
 
-<%= link_to 'Main Page', root_path, class:"btn btn-info" %>
+<div class="col-md-6">
+  <div class="panel panel-primary">
+    <h3 class="panel-title"> Information You Need to Know</h3>
+    <h3 class="panel-body">
 
-<%= link_to 'Adoption Page', dogs_path, class:"btn btn-info" %>
+    </div>
+</div>
+</body>

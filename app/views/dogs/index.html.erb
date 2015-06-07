@@ -1,5 +1,21 @@
 <p id="notice"><%= notice %></p>
 
+<div class="navbar navbar-default">
+  <div class="container">
+    <a class="navbar-brand" href="#">RESCUE ME</a>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href='main_page'>Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li></li>
+      <li class="divider-vertical"></li>
+      <!-- <li><a href="dogs#index">Adopt</a></li> -->
+      <li><a href="info_pages#index">Information</a></li>
+      <li><a href="#">Sponsor</a></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+
 <h1>Dogs that need Forever Homes</h1>
 
 <table>
@@ -29,7 +45,3 @@
 <br>
 
 <%= link_to 'New Dog', new_dog_path, class: "btn btn-info" %>
-
-<%= link_to 'Information Page', info_pages_path, class: "btn btn-success "%>
-
-<%= link_to 'Main Page', root_path, class:"btn btn-primary" %>
