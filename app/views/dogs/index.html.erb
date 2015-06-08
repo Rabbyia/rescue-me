@@ -1,14 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <div class="navbar navbar-default">
+  <div class="navbar-inner">
   <div class="container">
     <a class="navbar-brand" href="#">RESCUE ME</a>
     <ul class="nav navbar-nav">
-      <li class="active"><a href='main_page'>Home</a></li>
+      <li><a href='main_page'>Home</a></li>
       <li><a href="#">About Us</a></li>
       <li></li>
       <li class="divider-vertical"></li>
-      <!-- <li><a href="dogs#index">Adopt</a></li> -->
+      <li class="active"><a href="dogs#index">Adopt</a></li>
       <li><a href="info_pages#index">Information</a></li>
       <li><a href="#">Sponsor</a></li>
       <li></li>
@@ -38,5 +39,5 @@
     </div>
   <% end %>
 </div>
-      
+
 <%= link_to 'New Dog', new_dog_path, class: "btn btn-info" %>
