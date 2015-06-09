@@ -5,11 +5,10 @@
   <div class="container">
     <a class="navbar-brand" href="#"><strong>RESCUE ME</strong></a>
     <ul class="nav navbar-nav">
-      <li><a href= 'main_page' >Home</a></li>
+      <li><%= link_to "Home", welcome_path %></li>
       <li><a href="#">About Us</a></li>
-      <li></li>
       <li class="divider-vertical"></li>
-      <li><a href="dogs#index">Adopt</a></li>
+      <li><a href="dogs#show">Adopt</a></li>
       <li class="active"><a href="info_pages#index">Information</a></li>
       <li><a href="#">Sponsor</a></li>
       <li></li>
@@ -35,11 +34,16 @@
   <div class="panel panel-success">
     <div class="panel-heading">
       <h3>Search Options</h3>
+      <h5>Click to select</h5>
       <div class="panel-body">
         <button id="alldogs-close-CSS">All Dogs</button>
+
         <button id="puppies-close-CSS">Puppies</button>
+
         <button id="youngdog-close-CSS">Young Dogs</button>
+
         <button id="seniordog-close-CSS">Senior Dogs</button>
+
         <button id="specialdogs-close-CSS">Special Needs Dogs</button>
       </div>
     </div>

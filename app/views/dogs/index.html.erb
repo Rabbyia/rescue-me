@@ -1,11 +1,11 @@
-<p id="notice"><%= notice %></p>
+p id="notice"><%= notice %></p>
 
 <div class="navbar navbar-default">
   <div class="navbar-inner">
   <div class="container">
     <a class="navbar-brand" href="#"><strong>RESCUE ME</strong></a>
     <ul class="nav navbar-nav">
-      <li><a href='main_page'>Home</a></li>
+      <li><%= link_to "Home", welcome_path %></li>
       <li><a href="#">About Us</a></li>
       <li class="divider-vertical"></li>
       <li class="active"><a href="dogs#index">Adopt</a></li>
@@ -40,3 +40,40 @@
 </div>
 
 <%= link_to 'New Dog', new_dog_path, class: "btn btn-info" %>
+
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h2 style="text-align: center;"><a href="about.html.erb"><img class=" wp-image-540" title="Adoptable Dogs" src="http://therescueddog.org/wp-content/uploads/2014/02/audrey.png" alt="dog" width="183" height="184"></a></h2>
+        <h2 style="text-align: center;"><a title="">Adoptable Dogs</a></h2>
+        <p style="text-align: justify;">Check out our list of available Rescued Dogs. All of our dogs have been examined by a vet, spayed or neutered, vaccinated, and microchipped.  Interested in one of our dogs? Fill out an <a title="Adoption Application" href="about.html.erb">Adoption Application</a>, and when approved we will then setup a time to meet our Rescued Dogs!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h2 style="text-align: center;"><a href="http://therescueddog.org/mutt-match/"><img class="size-full wp-image-559" title="Mutt Match" src="http://therescueddog.org/wp-content/uploads/2013/09/thor_button.png" alt="thor_button" width="183" height="184"></a></h2>
+        <h2 style="text-align: center;"><a title="Dog Match" href="http://therescueddog.org/mutt-match/">Dog Match</a></h2>
+        <p style="text-align: justify;">Having a hard time finding the right dog for your family and still interested in rescuing? Check out our Dog Match program! This innovated program helps families find their perfect dog. We search shelters for your perfect match (breed, temperament, age, energy level). Once we find a good match for your family, the dog will be vetted and behaviorally evaluated to ensure a good match is made.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h2 style="text-align: center;"><a href="http://therescueddog.org/sponsor-a-rescue-dog/"><img class="alignnone wp-image-563" title="Sponsor a Dog" src="http://therescueddog.org/wp-content/uploads/2013/09/floyd_button.png" alt="floyd_button" width="187" height="188"></a></h2>
+        <h2 style="text-align: center;"><a title="Why Foster?" href="http://therescueddog.org/sponsor-a-rescue-dog/">Sponsor a Dog</a></h2>
+        <p style="text-align: justify;">Want to help us out, sponsoring a dog is the next best thing! By sponsoring a dog, spay or neuter, food, or vaccinations, you are helping us save another dog in need. We could not continue to rescue without your generosity. Our Rescued Dogs thank you!</p>
+      </div>
+    </div>
+  </div>
+</div>

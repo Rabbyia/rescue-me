@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   resources :info_pages
   resources :dogs
-
   root 'welcome#index'
 
-  get 'main_page' => 'welcome#index'
+  get 'welcome' => 'welcome#index'
   get 'about' => 'welcome#about'
 
 
