@@ -11,7 +11,6 @@ p id="notice"><%= notice %></p>
       <li class="active"><a href="dogs#index">Adopt</a></li>
       <li><a href="info_pages#index">Information</a></li>
       <li><a href="#">Sponsor</a></li>
-      <li></li>
     </ul>
   </div>
 </div>
@@ -25,8 +24,8 @@ p id="notice"><%= notice %></p>
           <div class="panel-body">
            <%= image_tag dog.avatar.url(:medium), class: "img-responsive" %>
            <h2><%= dog.name %></h2>
-           <h3><%= dog.age %></h3>
-           <p><%= dog.description %></p>
+           <h3>Dog Age Group: <%= dog.age %></h3>
+           <p>Description: <%= dog.description %></p>
 
            <div class="btn-group">
             <%= link_to 'Show', dog, class:"btn btn-primary" %>
@@ -52,9 +51,7 @@ p id="notice"><%= notice %></p>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
   <div class="col-md-4">
     <div class="panel panel-default">
       <div class="panel-body">
@@ -64,9 +61,7 @@ p id="notice"><%= notice %></p>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
   <div class="col-md-4">
     <div class="panel panel-default">
       <div class="panel-body">
