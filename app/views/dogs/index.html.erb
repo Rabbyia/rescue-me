@@ -15,12 +15,12 @@
   </div>
 </div>
 
-<h1>Dogs that need Forever Homes</h1>
+    <div style="text-align:center"><h1 style="color:#5C5C8A">Dogs that need Forever Homes</h1></div>
 
   <div class="row">
     <% @dogs.each do |dog| %>
       <div class="col-md-4">
-        <div class="panel panel-default">
+        <div class="panel panel-success">
           <div class="panel-body">
            <%= image_tag dog.avatar.url(:medium), class: "img-dog-avatar" %>
            <h2><%= dog.name %></h2>
